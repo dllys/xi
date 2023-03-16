@@ -45,19 +45,15 @@
 }
 #header .nav .gnb {display: flex; justify-content: space-between;}
 #header .nav .gnb li {text-align: center; position: relative;}
-#header .nav .gnb li::before {
+#header .nav .gnb li:hover::before {
     content: ""; display: block;
-    width: 0%; height: 2px;
+    width: 100%; height: 2px;
     background: #006A80;
     position: absolute;
     left: 50%; top: 30px;
     transform: translateX(-50%);
-    transition:0.3s;
-}
-#header .nav .gnb li:hover::before {
-    width: 100%; 
-}
 
+}
 
 #header .nav .gnb li ul li:hover::before {display: none;}
 #header .nav .gnb li a {font-size: 18px;}
@@ -79,8 +75,6 @@
 #side-nav ul li {margin-bottom: 20px; position: relative; cursor: pointer;}
 #side-nav ul li::before {content: ""; display: block; position: absolute; left: -3px; top: 50%; transform: translateY(-50%); width: 7px; height: 7px; background: #9E9E9E; border-radius: 50%;}
 #side-nav ul li.on::before {background: #006A80;}
-
-
 #side-nav ul li.on::after {content: ""; display: block; position: absolute; left: 0; top: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; border: 1px solid #006A80; border-radius: 50%;}
 #side-nav ul li a {padding-left: 20px;}
 #side-nav ul li.on a {color: #006A80}
@@ -302,29 +296,7 @@
     transform: translateX(-50%);
     text-align: center;
 }
-.main .check ul li p span{
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition:0.2s;
-}
-.main .check ul li p span::after{
-    display: block;
-    content:"";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;top: 0;
-    z-index: -10;
-    background: #006A80;
-    color:#fff;
-    transform:scaleX(0);
-    transition:0.6s;
-}
 
-.main .check ul li:hover p span{color:#fff}
-.main .check ul li:hover p span::after{transform:scaleX(1)}
 /*  // content2 */
 
 
