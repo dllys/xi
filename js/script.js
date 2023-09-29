@@ -11,7 +11,6 @@ function mainInit(){
     content3()
     content4()
     footer()
-    side_nav()
 }
 
 
@@ -220,45 +219,6 @@ function footer(){
 
 
 
-function side_nav(){
-    let $sideNav = $('#side-nav'); 
-    let $nav = $('#side-nav ul li');
-    let posY = [], cnt = 0, ty = 0;
-    
-
-    for(let i=0 ; i<6 ; i++) {
-        posY[i] = $('.main .con').eq(i).offset().top; 
-    }
-
-    $sideNav.hide();
-
-    // $(window).on('scroll',function(){
-    //     ty = $(window).scrollTop();
-    //     for(let i=0 ; i<6 ; i++) {
-    //         if(ty >= posY[i]) {
-    //             $nav.removeClass('on');
-    //             $nav.eq(i).addClass('on');
-    //         }
-    //     }
-    // })
-
-
-    // if(ty>3000){
-    //     $sideNav.show();
-    // }else {
-    //     $sideNav.hide();
-    // }
-
-    // $nav.on('click',function(){
-    //     cnt = $(this).index();
-    //     $('html,body').animate({scrollTop:posY[cnt]}, 400);
-        
-    //     $nav.removeClass('on');
-    //     $nav.eq(cnt).addClass('on');
-    // })
-
-
-}
 
 
 
